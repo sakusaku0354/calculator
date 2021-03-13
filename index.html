@@ -1,0 +1,185 @@
+<html>
+  <head>
+  <title>合計金額計算フォーム</title>
+  <script type="text/javascript">
+  <!--
+  function keisan(){
+  var price1 = document.form1.goods1.selectedIndex *3300;
+  document.form1.field1.value = price1;
+
+  var price2 = document.form1.goods2.selectedIndex *5500;
+  document.form1.field2.value = price2;
+
+  var price3 = document.form1.goods3.selectedIndex *7020;
+  document.form1.field3.value = price3;
+
+  var price4 = document.form1.goods4.selectedIndex *8640;
+  document.form1.field4.value = price4;
+
+  var price5 = document.form1.goods5.selectedIndex *6480;
+  document.form1.field5.value = price5;
+
+  var price6 = document.form1.goods6.selectedIndex *19250;
+  document.form1.field6.value = price6;
+
+  var price7 = document.form1.goods7.selectedIndex *192500;
+  document.form1.field7.value = price7;
+
+  var price8 = document.form1.goods8.selectedIndex *220000;
+  document.form1.field8.value = price8;
+
+  var price9 = document.form1.goods9.selectedIndex *3000;
+  document.form1.field9.value = price9;
+
+  var total = price1 + price2 + price3 + price4 + price5 + price6 + price7 + price8 + price9;
+
+  document.form1.field_total.value = total;
+  }
+
+  -->
+  </script>
+  </head>
+  <body>
+  <form action="#" name="form1" >
+  <table border="1" align="center" >
+  <caption><b>合計金額計算フォーム</b></caption>
+  <tr>
+  <th>施術・商品名</th>
+  <th>単価（税込）</th>
+  <th>人数・個数</th>
+  <th>金額（税込）</th>
+  </tr>
+  <tr>
+  <td bgcolor="lightblue">初回</td>
+  <td align="right" bgcolor="lightblue">3300円</td>
+  <td><select name="goods1" onChange="keisan()">
+  <option>0</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  </select></td>
+  <td><input type="text" name="field1" size="10" value="0">円</td>
+  </tr>
+
+  <tr>
+  <td bgcolor="lightblue">2回目以降</td>
+  <td align="right" bgcolor="lightblue">5500円</td>
+  <td><select name="goods2" onChange="keisan()">
+  <option>0</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  </select></td>
+  <td><input type="text" name="field2" size="10" value="0">円</td>
+  </tr>
+
+  <tr>
+  <td bgcolor="yellow">ナノカル</td>
+  <td align="right" bgcolor="yellow">7020円</td>
+  <td><select name="goods3" onChange="keisan()">
+  <option>0</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  </select></td>
+  <td><input type="text" name="field3" size="10" value="0">円</td>
+  </tr>
+
+  <tr>
+  <td bgcolor="yellow">コンドロ顆粒</td>
+  <td align="right" bgcolor="yellow">8640円</td>
+  <td><select name="goods4" onChange="keisan()">
+  <option>0</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  </select></td>
+  <td><input type="text" name="field4" size="10" value="0">円</td>
+  </tr>
+
+  <tr>
+  <td bgcolor="yellow">コンドロG</td>
+  <td align="right" bgcolor="yellow">6480円</td>
+  <td><select name="goods5" onChange="keisan()">
+  <option>0</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  </select></td>
+  <td><input type="text" name="field5" size="10" value="0">円</td>
+  </tr>
+
+  <tr>
+  <td bgcolor="yellowgreen">すややか枕</td>
+  <td align="right" bgcolor="yellowgreen">19250円</td>
+  <td><select name="goods6" onChange="keisan()">
+  <option>0</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  </select></td>
+  <td><input type="text" name="field6" size="10" value="0">円</td>
+  </tr>
+
+  <tr>
+  <td bgcolor="yellowgreen" >矯・ジュニア</td>
+  <td align="right" bgcolor="yellowgreen" >192500円</td>
+  <td><select name="goods7" onChange="keisan()">
+  <option>0</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  </select></td>
+  <td><input type="text" name="field7" size="10" value="0">円</td>
+  </tr>
+
+  <tr>
+  <td bgcolor="yellowgreen">矯・デラックス</td>
+  <td align="right" bgcolor="yellowgreen">220000円</td>
+  <td><select name="goods8" onChange="keisan()">
+  <option>0</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  </select></td>
+  <td><input type="text" name="field8" size="10" value="0">円</td>
+  </tr>  
+
+  <tr>
+    <td bgcolor="yellowgreen">レンタル</td>
+    <td align="right" bgcolor="yellowgreen">3000円</td>
+    <td><select name="goods9" onChange="keisan()">
+    <option>0</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    </select></td>
+    <td><input type="text" name="field9" size="10" value="0">円</td>
+    </tr>  
+  
+  <tr>
+  <td align="right" colspan="3" bgcolor="pink"> <strong>合計</strong></td>
+  <td bgcolor="pink"><input type="text" name="field_total" size="12" value="0" >円</td>
+  </tr>
+  </table>
+  </form>
+  </body>
+</html>
